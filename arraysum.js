@@ -8,12 +8,12 @@ var result = array.map((res, i) => res + array2[i]);
 console.log(result);
 //result [5,5,5,5]
 
-//Update
+//Update dynamic calculator
 const matcal = (matrix) => {
     let him = [];
-    for (j=0;j<3;j++){
+    for (j=0;j<matrix.length;j++){
         awal = matrix[j][0]
-        for (i=0;i<2; i++){
+        for (i=0;i<matrix[0].length-1; i++){
             let n = i+1
             awal = awal.map((res, i) => res + matrix[j][n][i]);
         }
@@ -22,6 +22,7 @@ const matcal = (matrix) => {
     console.log(him)
     return him
 }
+
 
 let base = [
     [[1,1,1],[3,4,5],[6,7,8]],
