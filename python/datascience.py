@@ -25,5 +25,8 @@ data.describe()
 #Showing Null Data
 data.isnull().sum()
 
+#Showing Unique Total
+data.kolom.nunique()
+
 #Data Visualization
 sns.relplot(x='kolom', y='kolom, data=data)
